@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "123123",
+      "name": "Sk Sohail",
+      "email": "sk@gmail.com",
+      "password": "@Qwerty123"
+    },
+    {
+      "id": "1743061808105",
+      "name": "Annamae Jerde",
+      "email": "sk@gmail.comm",
+      "password": "22xbG6Df3LhO4Zz@"
+    },
+    {
+      "id": "1743078440483",
+      "name": "Andreane Kulas",
+      "email": "your.email+fakedata95863@gmail.com",
+      "password": "Nv4OigXcKEKb4b0@"
+    },
+    {
+      "id": "1743139798033",
+      "name": "Pat Mraz",
+      "email": "your.email+fakedata71064@gmail.com",
+      "password": "Q60ajVQeUKwU6UP@"
+    },
+    {
+      "id": "1743149078428",
+      "name": "Margret Beier",
+      "email": "your.email+fakedata31148@gmail.com",
+      "password": "HJbQTVKQIgLyUKf@1"
+    }
+  ],
+  "cart": [
+    {
+      "id": "123123"
+    }
+  ]
+}
