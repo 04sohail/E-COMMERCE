@@ -90,6 +90,7 @@ export default function Signup() {
                     <div className="flex-col">
                         <label htmlFor="email">E-Mail</label>
                         <input
+                            autoComplete="email"
                             type="text"
                             id="email"
                             name="email"

@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center h-20 px-4">
         {/* Logo Section */}
         <div className="flex items-center">
-          <img src="../../public/logo.webp" className='h-13 ml-10' />
+          <img src="/logo.webp" className='h-13 ml-10' />
         </div>
 
         {/* Right Side - Cart and Profile */}
@@ -50,13 +50,13 @@ const Header = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="text-sm text-gray-600 mb-2">
-                  <p className="font-semibold">{user.name}</p>
-                  <p className="text-xs">{user.email}</p>
+                  <p className="font-semibold ">{user.name}</p>
+                  <p className="text-xs ">{user.email}</p>
                 </div>
                 <hr className="my-2" />
                 <button
                   onClick={handleLogout}
-                  className="w-full flex items-center text-left text-sm text-red-500 hover:bg-gray-100 p-2 rounded"
+                  className="w-full flex items-center text-left text-sm cursor-pointer text-red-500 hover:bg-gray-100 p-2 rounded"
                 >
                   <LogOut size={16} className="mr-2" />
                   Logout

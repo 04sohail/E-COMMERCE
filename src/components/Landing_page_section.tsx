@@ -6,7 +6,7 @@ const PRODUCT_SERVICES = new Product_services()
 
 
 const Landing_page_section = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate()  
     const [products, setProducts] = useState<Product[]>([])
     const getProducts = async () => {
         const products: ProductResponse = await PRODUCT_SERVICES.GetProducts()
@@ -18,7 +18,7 @@ const Landing_page_section = () => {
     const handleCart = (id: number) => {
         const selectedProduct = products.find((product) => product.id === id);
         if (selectedProduct) {
-            console.log(selectedProduct);
+            // console.log(selectedProduct);
             navigate("/landing_page/product_details", { state: { product: selectedProduct } });
         } else {
             console.error("Product not found");
