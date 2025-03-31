@@ -11,6 +11,30 @@
       "name": "Brendan",
       "email": "Brendan@JS.com",
       "password": "@Brendan123"
+    },
+    {
+      "id": "1743313281832",
+      "name": "Pratyush",
+      "email": "Pratyush@test.com",
+      "password": "@Bubu123"
+    },
+    {
+      "id": "1743313459274",
+      "name": "Pratyush",
+      "email": "Pratyush@test1.com",
+      "password": "@Bubu123"
+    },
+    {
+      "id": "1743313590294",
+      "name": "Pratyush",
+      "email": "Pratyush@test2.com",
+      "password": "@Bubu123"
+    },
+    {
+      "id": "1743313843729",
+      "name": "Guido",
+      "email": "guido@test.com",
+      "password": "@Guidl123"
     }
   ],
   "cart": [

@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import { sign_up_schema } from "../utils/validations";
 import { Link, useNavigate } from "react-router-dom";
-import { UserServices } from "../services/api";
+import { UserServices } from "../services/user_api";
 import { User } from "../types/types";
 import { useState } from "react";
 import { useRef } from "react";
@@ -29,6 +29,7 @@ export default function Signup() {
                 setSubmitError(null);
                 values.id = Date.now().toString();
                 const response = await USER_SERVICES_INSTANCE.PostUsers(values as User);
+                console.log(response);
                 if (response) {
                     navigate('/');
                 } else {

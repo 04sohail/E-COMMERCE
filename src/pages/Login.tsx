@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { login_schema } from "../utils/validations";
 import { useUser } from "../contexts/user/useUser";
-import { UserServices } from "../services/api"
+import { UserServices } from "../services/user_api"
 
 
 const USER_SERVICES_INSTANCE = new UserServices();
