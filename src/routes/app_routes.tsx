@@ -16,8 +16,8 @@ const AppRoutes: React.FC = () => {
                 <Route path={routesConfig.login} element={<PublicRoute><Login /></PublicRoute>} />
                 <Route path={routesConfig.signup} element={<PublicRoute><Signup /></PublicRoute>} />
                 {/* Protected Routes */}
-                <Route path={routesConfig.landing} element={<ProtectedRoute><Landing_Page /></ProtectedRoute>} />
-                <Route path={routesConfig.product_details} element={<ProtectedRoute><Product_details /></ProtectedRoute>} />
+                <Route path={routesConfig.landing} element={<Landing_Page />} />
+                <Route path={routesConfig.product_details} element={<Product_details />} />
                 {/* Route For Invalid URL's */}
                 <Route path={routesConfig.random} element={<Invalid_Route />} />
             </Routes>

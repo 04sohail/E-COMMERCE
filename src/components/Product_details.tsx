@@ -1,33 +1,11 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import ProductDetailsSkeleton from "../loaders/product_details_loader"; // Import the skeleton component
+import { CartItem, LocationState, Product } from "../types/types";
+import { addCart, removeCart } from "../redux/Slice"
+import { useDispatch } from "react-redux";
 
-// Product interface based on DummyJSON API schema
-interface Product {
-    id: number;
-    title: string;
-    description: string;
-    price: number;
-    discountPercentage: number;
-    rating: number;
-    stock: number;
-    brand: string;
-    category: string;
-    thumbnail: string;
-    images: string[];
-}
-
-// Location state interface
-interface LocationState {
-    product?: Product;
-}
-
-// Cart item interface
-interface CartItem extends Product {
-    quantity: number;
-}
-
-const ProductDetails = (): JSX.Element => {
+const ProductDetails = (): React.ReactElement => {
     const [product, setProduct] = useState<Product | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
@@ -92,10 +70,8 @@ const ProductDetails = (): JSX.Element => {
             // Add new product to cart with quantity 1
             const updatedCart = [...currentCart, { ...product, quantity: 1 }];
             localStorage.setItem('cart', JSON.stringify(updatedCart));
+            useDispatch(addCart(updatedCart))
         }
-
-        // Show success alert or notification
-        alert("Product added to cart successfully!");
     };
 
     // Calculate discounted price
@@ -104,8 +80,8 @@ const ProductDetails = (): JSX.Element => {
     };
 
     // Generate star rating display
-    const renderRatingStars = (rating: number): JSX.Element[] => {
-        const stars: JSX.Element[] = [];
+    const renderRatingStars = (rating: number): React.ReactElement[] => {
+        const stars: React.ReactElement[] = [];
         const fullStars = Math.floor(rating);
         const hasHalfStar = rating - fullStars >= 0.5;
 

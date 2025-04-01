@@ -73,9 +73,16 @@ export interface Cart {
 
 
 
+// Location state interface
+export interface LocationState {
+    product?: Product;
+}
 
 
-
+// Cart item interface
+export interface CartItem extends Product {
+    quantity: number;
+}
 
 
 
