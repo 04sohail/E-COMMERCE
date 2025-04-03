@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { login_schema } from "../utils/validations";
 import { useUser } from "../contexts/user/useUser";
-import { UserServices } from "../services/api"
+import { UserServices } from "../services/user_api"
 
 
 const USER_SERVICES_INSTANCE = new UserServices();
@@ -19,7 +19,7 @@ export default function Login() {
     password: false,
   });
 
-  const { loginUser } = useUser(); // Access context methods
+  const { loginUser } = useUser();
 
   const navigate = useNavigate()
   const { values, errors, handleChange, handleBlur, handleSubmit } = useFormik({
@@ -32,6 +32,7 @@ export default function Login() {
       if (response.length > 0) {
         const { password, ...userWithoutPassword } = response[0];
         loginUser(userWithoutPassword);
+        localStorage.setItem("toastFlag", JSON.stringify(true))
         navigate("/landing_page")
       }
     },
@@ -49,6 +50,7 @@ export default function Login() {
 
   return (
     <div className="wrapper signIn">
+
       <div className="illustration">
         <img src="/login_sample.webp" alt="illustration" height={100} />
       </div>
