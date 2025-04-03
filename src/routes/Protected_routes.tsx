@@ -22,7 +22,7 @@ interface PublicRouteProps {
 export const PublicRoute: React.FC<PublicRouteProps> = ({ children }) => {
     const { user } = useUser();
     if (user.email && user.email.length > 0) {
-        return <Navigate to="/landing_page" />;
+        return children;
     } else {
         return children;
     }

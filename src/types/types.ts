@@ -6,7 +6,7 @@ export interface User {
 }
 
 export interface LoginUserData {
-    id:string,
+    id: string,
     name: string;
     email: string;
 }
@@ -66,31 +66,20 @@ export interface ProductResponse {
 
 
 
+export interface Cart {
+    id: number;
+    cart: CartItem[]
+}
+
+// Location state interface
+export interface LocationState {
+    product?: Product;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Cart item interface
+export interface CartItem {
+    id: number,
+    product: Product
+    quantity: number;
+}

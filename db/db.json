@@ -3,37 +3,253 @@
     {
       "id": "123123",
       "name": "Sk Sohail",
-      "email": "sk@gmail.com",
+      "email": "sk@test.com",
       "password": "@Qwerty123"
     },
     {
-      "id": "1743061808105",
-      "name": "Annamae Jerde",
-      "email": "sk@gmail.comm",
-      "password": "22xbG6Df3LhO4Zz@"
+      "id": "1743226194347",
+      "name": "Brendan",
+      "email": "Brendan@JS.com",
+      "password": "@Brendan123"
     },
     {
-      "id": "1743078440483",
-      "name": "Andreane Kulas",
-      "email": "your.email+fakedata95863@gmail.com",
-      "password": "Nv4OigXcKEKb4b0@"
+      "id": "1743313281832",
+      "name": "Pratyush",
+      "email": "Pratyush@test.com",
+      "password": "@Bubu123"
     },
     {
-      "id": "1743139798033",
-      "name": "Pat Mraz",
-      "email": "your.email+fakedata71064@gmail.com",
-      "password": "Q60ajVQeUKwU6UP@"
+      "id": "1743313459274",
+      "name": "Pratyush",
+      "email": "Pratyush@test1.com",
+      "password": "@Bubu123"
     },
     {
-      "id": "1743149078428",
-      "name": "Margret Beier",
-      "email": "your.email+fakedata31148@gmail.com",
-      "password": "HJbQTVKQIgLyUKf@1"
+      "id": "1743313590294",
+      "name": "Pratyush",
+      "email": "Pratyush@test2.com",
+      "password": "@Bubu123"
+    },
+    {
+      "id": "1743313843729",
+      "name": "Guido",
+      "email": "guido@test.com",
+      "password": "@Guidl123"
     }
   ],
   "cart": [
     {
-      "id": "123123"
+      "id": "123123",
+      "cart": [
+        {},
+        {}
+      ]
+    },
+    {
+      "id": 1,
+      "cart": [
+        {
+          "product": {
+            "id": 1,
+            "title": "Essence Mascara Lash Princess",
+            "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+            "category": "beauty",
+            "price": 9.99,
+            "discountPercentage": 7.17,
+            "rating": 4.94,
+            "stock": 5,
+            "tags": [
+              "beauty",
+              "mascara"
+            ],
+            "brand": "Essence",
+            "sku": "RCH45Q1A",
+            "weight": 2,
+            "dimensions": {
+              "width": 23.17,
+              "height": 14.43,
+              "depth": 28.01
+            },
+            "warrantyInformation": "1 month warranty",
+            "shippingInformation": "Ships in 1 month",
+            "availabilityStatus": "Low Stock",
+            "reviews": [
+              {
+                "rating": 2,
+                "comment": "Very unhappy with my purchase!",
+                "date": "2024-05-23T08:56:21.618Z",
+                "reviewerName": "John Doe",
+                "reviewerEmail": "john.doe@x.dummyjson.com"
+              },
+              {
+                "rating": 2,
+                "comment": "Not as described!",
+                "date": "2024-05-23T08:56:21.618Z",
+                "reviewerName": "Nolan Gonzalez",
+                "reviewerEmail": "nolan.gonzalez@x.dummyjson.com"
+              },
+              {
+                "rating": 5,
+                "comment": "Very satisfied!",
+                "date": "2024-05-23T08:56:21.618Z",
+                "reviewerName": "Scarlett Wright",
+                "reviewerEmail": "scarlett.wright@x.dummyjson.com"
+              }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 24,
+            "meta": {
+              "createdAt": "2024-05-23T08:56:21.618Z",
+              "updatedAt": "2024-05-23T08:56:21.618Z",
+              "barcode": "9164035109868",
+              "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+              "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png"
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "cart": [
+        {
+          "product": {
+            "id": 1,
+            "title": "Essence Mascara Lash Princess",
+            "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+            "category": "beauty",
+            "price": 9.99,
+            "discountPercentage": 7.17,
+            "rating": 4.94,
+            "stock": 5,
+            "tags": [
+              "beauty",
+              "mascara"
+            ],
+            "brand": "Essence",
+            "sku": "RCH45Q1A",
+            "weight": 2,
+            "dimensions": {
+              "width": 23.17,
+              "height": 14.43,
+              "depth": 28.01
+            },
+            "warrantyInformation": "1 month warranty",
+            "shippingInformation": "Ships in 1 month",
+            "availabilityStatus": "Low Stock",
+            "reviews": [
+              {
+                "rating": 2,
+                "comment": "Very unhappy with my purchase!",
+                "date": "2024-05-23T08:56:21.618Z",
+                "reviewerName": "John Doe",
+                "reviewerEmail": "john.doe@x.dummyjson.com"
+              },
+              {
+                "rating": 2,
+                "comment": "Not as described!",
+                "date": "2024-05-23T08:56:21.618Z",
+                "reviewerName": "Nolan Gonzalez",
+                "reviewerEmail": "nolan.gonzalez@x.dummyjson.com"
+              },
+              {
+                "rating": 5,
+                "comment": "Very satisfied!",
+                "date": "2024-05-23T08:56:21.618Z",
+                "reviewerName": "Scarlett Wright",
+                "reviewerEmail": "scarlett.wright@x.dummyjson.com"
+              }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 24,
+            "meta": {
+              "createdAt": "2024-05-23T08:56:21.618Z",
+              "updatedAt": "2024-05-23T08:56:21.618Z",
+              "barcode": "9164035109868",
+              "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+              "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png"
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "cart": [
+        {
+          "product": {
+            "id": 8,
+            "title": "Dior J'adore",
+            "description": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
+            "category": "fragrances",
+            "price": 89.99,
+            "discountPercentage": 17.44,
+            "rating": 3.31,
+            "stock": 91,
+            "tags": [
+              "fragrances",
+              "perfumes"
+            ],
+            "brand": "Dior",
+            "sku": "E70NB03B",
+            "weight": 10,
+            "dimensions": {
+              "width": 21.51,
+              "height": 7,
+              "depth": 26.51
+            },
+            "warrantyInformation": "Lifetime warranty",
+            "shippingInformation": "Ships in 2 weeks",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+              {
+                "rating": 5,
+                "comment": "Fast shipping!",
+                "date": "2024-05-23T08:56:21.619Z",
+                "reviewerName": "Zoe Nicholson",
+                "reviewerEmail": "zoe.nicholson@x.dummyjson.com"
+              },
+              {
+                "rating": 4,
+                "comment": "Excellent quality!",
+                "date": "2024-05-23T08:56:21.619Z",
+                "reviewerName": "Addison Wright",
+                "reviewerEmail": "addison.wright@x.dummyjson.com"
+              },
+              {
+                "rating": 4,
+                "comment": "Would buy again!",
+                "date": "2024-05-23T08:56:21.619Z",
+                "reviewerName": "Clara Berry",
+                "reviewerEmail": "clara.berry@x.dummyjson.com"
+              }
+            ],
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 8,
+            "meta": {
+              "createdAt": "2024-05-23T08:56:21.619Z",
+              "updatedAt": "2024-05-23T08:56:21.619Z",
+              "barcode": "0887083199279",
+              "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+              "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/1.png",
+              "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/2.png",
+              "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/3.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/thumbnail.png"
+          },
+          "quantity": 1
+        }
+      ]
     }
   ]
 }

@@ -11,4 +11,4 @@ export class Product_services {
             console.log("Error while fetching products data", error);
         }
     }
-}   
+}
